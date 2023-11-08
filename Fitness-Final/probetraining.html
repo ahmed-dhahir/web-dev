@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Probetraining Anmeldung</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="probetraining.css">
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
+        <div class="container">
+            <a class="navbar-brand mr-3 text-white" href="#">PowerPulse Fitness</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-secondary text-white" href="instructions.html" target="_blank">Homepage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-secondary text-white" href="workouts.html" target="_blank">Price</a>
+                </li>
+                <li class "nav-item">
+                    <a class="nav-link btn btn-outline-secondary text-white" href="nutritions.html" target="_blank">Nutritions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-secondary text-white" href="locations.html" target="_blank">Equipment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-secondary text-white" href="pictures.html" target="_blank">Über Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-secondary text-white" href="contact.html" target="_blank">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <img src="pictures/thumbnail/Fitnessstudio.jpg" width="100%">
+    <div class="container">
+        <h1 class="mt-5 text-white">Probetraining Anmeldung</h1>
+        <form action="dein-server-endpoint" method="post">
+            <div class="form-group">
+                <label for="name" class="text-white">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="email" class="text-white">E-Mail:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="phone" class="text-white">Telefonnummer:</label>
+                <input type="tel" class="form-control" id="phone" name="phone">
+            </div>
+    
+            <div class="form-group">
+                <label for="date" class="text-white">Gewünschtes Datum:</label>
+                <input type="date" class="form-control" id="date" name="date">
+            </div>
+    
+            <div class="form-group">
+                <label for="message" class="text-white">Nachricht (optional):</label>
+                <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+            </div>
+    
+            <button type="submit" class="btn btn-primary">Anmelden</button>
+        </form>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+<footer class="bg-dark text-light py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Kontakt</h5>
+                <p>E-Mail: kontakt@fitnesswebsite.de</p>
+                <p>Telefon: +49 123 456789</p>
+                <p>Adresse: Musterstraße 123, 12345 Musterstadt</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="/" class="footer-link">Startseite</a></li>
+                    <li><a href="/angebote" class="footer-link">Angebote</a></li>
+                    <li><a href="/kurse" class="footer-link">Kurse</a></li>
+                    <li><a href="/kontakt" class="footer-link">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Folge uns</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="footer-link"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#" class="footer-link"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#" class="footer-link"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="text-center">© 2023 Fitnesswebsite. Alle Rechte vorbehalten.</p>
+    </div>
+</footer>
+</html>

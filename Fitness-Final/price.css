@@ -1,0 +1,130 @@
+/* Erhöht die Header-Höhe */
+.navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px; 
+}
+
+/* Verringert die Button-Größe und fügt Abstand hinzu */
+.navbar .btn {
+    font-size: 14px;
+    margin-right: 10px;
+    border: none;
+}
+
+/* Entfernt den Rand bei den Buttons */
+.navbar .btn:focus {
+    box-shadow: none;
+}
+
+/* CSS für Hover-Effekt */
+.navbar .btn:hover {
+    opacity: 0.7;
+}
+
+p{
+    font-size: 10px;
+}
+
+h1{
+    color: white;
+}
+
+h2{
+    color: white;
+}
+
+h3{
+    color: white;
+}
+
+h5{
+    font-size: 15px;
+}
+
+h6{
+    color: white;
+}
+
+a{
+    font-size: 10px;
+}
+
+body{
+    background-color: lightslategray;
+}
+
+.test{
+    background-color: black;
+    margin-top: 20px;
+}
+
+.p-UnserePreise{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.preise-grid{
+    display:grid;
+    grid-template-columns: 300px 300px 300px;
+    column-gap: 20px;
+    row-gap:20px;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 20px;
+}
+
+.price-box ul li{
+    list-style: none;
+    padding: 0;
+    color: white;
+}
+
+.price-box ul .with-check::before {
+    content: "\2713"; /* Unicode-Code für ein Häkchen */
+    margin-right: 10px;
+    color: green;
+}
+
+.price-box ul .with-cross::before {
+    content: "\2717"; /* Unicode-Code für ein Kreuz */
+    color: red;
+}
+
+.col-md-3 {
+    margin-bottom: 40px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.col-md-3:hover {
+    opacity: 0.7; /* Reduziert die Opazität beim Hovern */
+    background-color: black;
+}
+
+.price-large {
+    font-size: 24px; /* Größe für den Preis */
+}
+
+.price-small {
+    font-size: 12px; /* Größe für "mtl." */
+}
+
+
+
+.footer-link {
+    text-decoration: none;
+    color: lightgray;
+}
+
+.footer-link:hover {
+    color: white;
+}

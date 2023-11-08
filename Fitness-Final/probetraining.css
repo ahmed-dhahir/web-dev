@@ -1,0 +1,39 @@
+.navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px; 
+}
+
+/* Verringert die Button-Größe und fügt Abstand hinzu */
+.navbar .btn {
+    font-size: 14px;
+    margin-right: 10px;
+    border: none;
+}
+
+/* Entfernt den Rand bei den Buttons */
+.navbar .btn:focus {
+    box-shadow: none;
+}
+
+/* CSS für Hover-Effekt */
+.navbar .btn:hover {
+    opacity: 0.7;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: lightgray;
+}
+
+.footer-link:hover {
+    color: white;
+}
+
+p{
+    font-size: 10px;
+}
+
+body{
+    background-color:lightslategray;
+}

@@ -1,0 +1,185 @@
+/* Erhöht die Header-Höhe */
+.navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px; 
+}
+
+/* Verringert die Button-Größe und fügt Abstand hinzu */
+.navbar .btn {
+    font-size: 14px;
+    margin-right: 10px;
+    border: none;
+}
+
+/* Entfernt den Rand bei den Buttons */
+.navbar .btn:focus {
+    box-shadow: none;
+}
+
+/* CSS für Hover-Effekt */
+.navbar .btn:hover {
+    opacity: 0.7;
+}
+
+/* Offerings and Equipment*/
+
+.p-offers{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.gym-grid{
+    display:grid;
+    grid-template-columns: 120px 120px 120px 120px 120px 120px;
+    column-gap: 20px;
+    row-gap:20px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.gym-picture{
+    width: 120px;
+    height: 160px;
+    padding-left:10 10 10 10;
+    background-color: black;
+    opacity: 0.4;
+    
+}
+
+.gym-picture:hover{
+    opacity: 0.9;
+    background-color: black;
+}
+
+.picture{
+    width: 100px;
+    height: 100px;
+}
+
+.gym-icon{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-text{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.p-gym{
+    font-size: 13px;
+    color: white;
+    
+}
+
+p{
+    font-size: 10px;
+}
+
+/* Probetraining Box*/
+
+.text-box{
+    flex: 1;
+    font-size: 25px;
+    color: white;
+    padding-left: 10px;
+  }
+
+
+  .list-box,
+  .button-box {
+    flex: 1;
+    color:white;
+    
+  }
+  
+  .text-box p {
+    margin: 0; /* Entfernt den Standardabstand von p-Elementen */
+  }
+
+
+.probetraining-box{
+    height:200px;
+    background-color: #fe0000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top:100px;
+}
+
+.probetraining-p{
+    font-size:25px;
+}
+
+.left-section{
+    background-color:#fe0000;
+    width: 400px;
+    margin-left: 200px;
+    font-size: 30px;
+    color: white;
+}
+
+.middle-section{
+    background-color:#fe0000;
+    color: white;
+    width: 250px;
+    margin: 30px;
+}
+
+.right-section{
+    background-color:#fe0000;
+    color: white;
+    flex: 1;
+    
+}
+
+.button-probetraining {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px; /* Erhöhen Sie den Padding-Wert, um den Button zu vergrößern */
+    margin: 0 5px; /* Adjust the margin as needed */
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: opacity 0.15s;
+    margin-top: 5px;
+    font-size: 15px;
+    
+  }
+
+
+
+h5{
+    font-size: 15px;
+}
+
+h2{
+    color: white;
+}
+
+a{
+    font-size: 10px;
+}
+
+body{
+    background-color:lightslategray;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: lightgray;
+}
+
+.footer-link:hover {
+    color: white;
+}
+
+
+
