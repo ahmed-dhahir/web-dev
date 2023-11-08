@@ -50,6 +50,19 @@ body {
     font-size: 1.5rem;
 }
 
+/* Description Toggle */
+.description .toggle-description {
+    display: block; /* Make the button a block to take up the full width */
+    margin-top: 0.5rem;
+    font-size: 0.9em;
+    color: #007bff;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    text-decoration: underline; /* Indicates that it is clickable */
+}
+
 /* Call to Action Section */
 .btn-primary {
     background-color: #333;
