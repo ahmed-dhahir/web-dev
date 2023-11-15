@@ -4,19 +4,17 @@
         <title>PowerPulse Fitness</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Bootstrap CSS-->
+        <!-- Bootstrap CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="https://ahmed-dhahir.github.io/web-dev/assets/css/main.css">
-
-        <!-- Bootstrap JS and jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+        <!-- Bootstrap Bundle JS (includes Popper and is Bootstrap 5 compatible) -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-
-
+        
         <!-- Custom JS Code -->
-        <script src="https://ahmed-dhahir.github.io/web-dev/assets/js/script.js"></script>
+        <script src="https://ahmed-dhahir.github.io/web-dev/assets/js/script.js" defer></script>
     </head>
+    
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
@@ -55,24 +53,24 @@
         </div>
         
         <!-- Offers & Equipment grid-->
+        <!-- Modal structure -->
         <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="infoModalLabel">Information</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="infoModalLabel">Information</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Content will be loaded by JavaScript -->
+                    </div>
                 </div>
-                <div class="modal-body">
-                  <!-- Content will be loaded by JavaScript -->
-                </div>
-              </div>
             </div>
-          </div>
+        </div>
+
           
         <div class="gym-grid">
-            <div class="gym-picture">
+            <div class="gym-picture" data-feature="always-open">
                 <div class="gym-icon">
                     <img class="picture" src="https://ahmed-dhahir.github.io/web-dev/assets/images/gym-pictures/immer geöffnet.png">
                 </div>
@@ -80,8 +78,8 @@
                     <p class="p-gym">Always open</p>
                 </div>
             </div>
-    
-            <div class="gym-picture">
+        
+            <div class="gym-picture" data-feature="equipment-training">
                 <div class="gym-icon">
                     <img class="picture" src="https://ahmed-dhahir.github.io/web-dev/assets/images/gym-pictures/Gerätetraining.png">
                 </div>
@@ -89,8 +87,8 @@
                     <p class="p-gym">Equipment training</p>
                 </div>
             </div>
-    
-            <div class="gym-picture">
+        
+            <div class="gym-picture" data-feature="cardio-training">
                 <div class="gym-icon">
                     <img class="picture" src="https://ahmed-dhahir.github.io/web-dev/assets/images/gym-pictures/Cardiotraining.png">
                 </div>
@@ -98,8 +96,8 @@
                     <p class="p-gym">Cardio training</p>
                 </div>
             </div>
-    
-            <div class="gym-picture">
+        
+            <div class="gym-picture" data-feature="free-weight-area">
                 <div class="gym-icon">
                     <img class="picture" src="https://ahmed-dhahir.github.io/web-dev/assets/images/gym-pictures/Freihantelbereich.png">
                 </div>
@@ -107,8 +105,8 @@
                     <p class="p-gym">Free weight area</p>
                 </div>
             </div>
-    
-            <div class="gym-picture">
+        
+            <div class="gym-picture" data-feature="functional-training">
                 <div class="gym-icon">
                     <img class="picture" src="https://ahmed-dhahir.github.io/web-dev/assets/images/gym-pictures/Functional Training.png">
                 </div>
@@ -116,8 +114,8 @@
                     <p class="p-gym">Functional Training</p>
                 </div>
             </div>
-    
-            <div class="gym-picture">
+        
+            <div class="gym-picture" data-feature="trx-training">
                 <div class="gym-icon">
                     <img class="picture" src="https://ahmed-dhahir.github.io/web-dev/assets/images/gym-pictures/TRX Training.png">
                 </div>
@@ -125,8 +123,8 @@
                     <p class="p-gym">TRX Training</p>
                 </div>
             </div>
-    
-            <div class="gym-picture">
+        
+            <div class="gym-picture" data-feature="stretching-point">
                 <div class="gym-icon">
                     <img class="picture" src="https://ahmed-dhahir.github.io/web-dev/assets/images/gym-pictures/Stretching Point.png">
                 </div>
@@ -134,8 +132,8 @@
                     <p class="p-gym">Stretching Point</p>
                 </div>
             </div>
-    
-            <div class="gym-picture">
+        
+            <div class="gym-picture" data-feature="box-workout">
                 <div class="gym-icon">
                     <img class="picture" src="https://ahmed-dhahir.github.io/web-dev/assets/images/gym-pictures/Box Workout.png">
                 </div>
@@ -143,79 +141,80 @@
                     <p class="p-gym">Box Workout</p>
                 </div>
             </div>
-    
-            <div class="gym-picture">
+        
+            <div class="gym-picture" data-feature="personal-training">
                 <div class="gym-icon">
                     <img class="picture" src="https://ahmed-dhahir.github.io/web-dev/assets/images/gym-pictures/Personal Training.png">
                 </div>
                 <div class="icon-text">
-                    <p class="p-gym">Personal Training </p>
+                    <p class="p-gym">Personal Training</p>
                 </div>
             </div>
-    
-            <div class="gym-picture">
+        
+            <div class="gym-picture" data-feature="inbody-analysis">
                 <div class="gym-icon">
                     <img class="picture" src="https://ahmed-dhahir.github.io/web-dev/assets/images/gym-pictures/InBody Körperanalyse.png">
                 </div>
                 <div class="icon-text">
-                    <p class="p-gym">immer geöffnet</p>
+                    <p class="p-gym">InBody Analysis</p>
                 </div>
             </div>
-    
-            <div class="gym-picture">
+        
+            <div class="gym-picture" data-feature="solarium">
                 <div class="gym-icon">
                     <img class="picture" src="https://ahmed-dhahir.github.io/web-dev/assets/images/gym-pictures/Solarium.png">
                 </div>
                 <div class="icon-text">
-                    <p class="p-gym">immer geöffnet</p>
+                    <p class="p-gym">Solarium</p>
                 </div>
             </div>
-    
-            <div class="gym-picture">
+        
+            <div class="gym-picture" data-feature="refreshments">
                 <div class="gym-icon">
                     <img class="picture" src="https://ahmed-dhahir.github.io/web-dev/assets/images/gym-pictures/Getränke.png">
                 </div>
                 <div class="icon-text">
-                    <p class="p-gym">immer geöffnet</p>
+                    <p class="p-gym">Refreshments</p>
                 </div>
             </div>
-    
-            <div class="gym-picture">
+        
+            <div class="gym-picture" data-feature="showers">
                 <div class="gym-icon">
                     <img class="picture" src="https://ahmed-dhahir.github.io/web-dev/assets/images/gym-pictures/Duschen.png">
                 </div>
                 <div class="icon-text">
-                    <p class="p-gym">immer geöffnet</p>
+                    <p class="p-gym">Showers</p>
                 </div>
             </div>
-    
-            <div class="gym-picture">
+        
+            <div class="gym-picture" data-feature="training-plan">
                 <div class="gym-icon">
                     <img class="picture" src="https://ahmed-dhahir.github.io/web-dev/assets/images/gym-pictures/Trainingsplan.png">
                 </div>
                 <div class="icon-text">
-                    <p class="p-gym">immer geöffnet</p>
+                    <p class="p-gym">Training Plan</p>
                 </div>
             </div>
-    
-            <div class="gym-picture">
+        
+            <div class="gym-picture" data-feature="wifi">
                 <div class="gym-icon">
                     <img class="picture" src="https://ahmed-dhahir.github.io/web-dev/assets/images/gym-pictures/Wifi.png">
                 </div>
                 <div class="icon-text">
-                    <p class="p-gym">immer geöffnet</p>
+                    <p class="p-gym">WiFi</p>
                 </div>
             </div>
-    
-            <div class="gym-picture">
+        
+            <div class="gym-picture" data-feature="parking">
                 <div class="gym-icon">
                     <img class="picture" src="https://ahmed-dhahir.github.io/web-dev/assets/images/gym-pictures/Kundenparkplätze.png">
                 </div>
                 <div class="icon-text">
-                    <p class="p-gym">immer geöffnet</p>
+                    <p class="p-gym">Parking</p>
                 </div>
             </div>
         </div>
+        
         
         <div class="probetraining-box">
             <div class="left-section">

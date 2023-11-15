@@ -323,3 +323,29 @@ body {
     background-color: #333; /* Dark background for contrast */
     color: white; /* White text for readability */
 }
+
+.btn-link[data-bs-toggle="modal"] {
+    color: #add8e6; /* Light blue color for contrast and visibility */
+    text-decoration: underline;
+}
+
+.btn-link[data-bs-toggle="modal"]:hover {
+    color: #fff; /* White color on hover for better visibility */
+}
+
+/* ... rest of your CSS ... */
+
+/* Bootstrap 5 modal styles */
+.modal-content {
+    background-color: #333; /* Dark background for contrast */
+    color: white; /* White text for readability */
+}
+
+/* Ensure that the z-index of modal is high enough to appear on top */
+.modal-backdrop.show {
+    z-index: 1040;
+}
+
+.modal {
+    z-index: 1050;
+}
