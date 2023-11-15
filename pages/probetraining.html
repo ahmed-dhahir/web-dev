@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Trial Training</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="C:\Users\ahmed\Desktop\combined\assets\css\main.css">
+    </head>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand mr-3 text-white" href="#">PowerPulse Fitness</a>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-secondary text-white" href="C:\Users\ahmed\Desktop\combined\index.html">Homepage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-secondary text-white" href="C:\Users\ahmed\Desktop\combined\pages\price.html">Price</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-secondary text-white" href="C:\Users\ahmed\Desktop\combined\pages\nutritions.html">Nutritions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-secondary text-white" href="C:\Users\ahmed\Desktop\combined\pages\equipment.html">Equipment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-secondary text-white" href="C:\Users\ahmed\Desktop\combined\pages\about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-secondary text-white" href="C:\Users\ahmed\Desktop\combined\pages\contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+<body>
+    <img src="C:\Users\ahmed\Desktop\combined\assets\images\thumbnail\Fitnessstudio.jpg" width="100%">
+    <div class="container">
+        <h1 class="mt-5 text-white">Sign up for a trial training</h1>
+        <form action="dein-server-endpoint" method="post">
+            <div class="form-group">
+                <label for="name" class="text-white">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="email" class="text-white">E-Mail:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="phone" class="text-white">Telephon Number:</label>
+                <input type="tel" class="form-control" id="phone" name="phone">
+            </div>
+    
+            <div class="form-group">
+                <label for="date" class="text-white">Desired Date:</label>
+                <input type="date" class="form-control" id="date" name="date">
+            </div>
+    
+            <div class="form-group">
+                <label for="message" class="text-white">Message (optional):</label>
+                <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+            </div>
+    
+            <button type="submit" class="btn btn-primary">Sign up</button>
+        </form>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+<footer class="bg-dark text-light py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <p>E-Mail: kontakt@fitnesswebsite.de</p>
+                <p>Telephon: +49 123 456789</p>
+                <p>Address: Musterstraße 123, 12345 Musterstadt</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="/" class="footer-link">Homepage</a></li>
+                    <li><a href="/angebote" class="footer-link">Offers</a></li>
+                    <li><a href="/kurse" class="footer-link">Courses</a></li>
+                    <li><a href="/kontakt" class="footer-link">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Follow Us</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="footer-link"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#" class="footer-link"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#" class="footer-link"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="text-center">© 2023 Fitness Website. All rights reseved.</p> 
+    </div>
+</footer>
+</html>

@@ -1,0 +1,325 @@
+/* Navbar Styles */
+.navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+}
+
+/* Navbar Button Styles */
+.navbar .btn {
+    font-size: 14px;
+    margin-right: 10px;
+    border: none;
+    box-shadow: none; 
+    opacity: 0.7; /* Hover effect */
+}
+
+/* Offerings and Equipment */
+.p-offers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.gym-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 120px);
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.gym-picture {
+    width: 120px;
+    height: 160px;
+    padding: 10px;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.gym-picture:hover {
+    opacity: 0.9;
+    background-color: black;
+}
+
+.picture {
+    width: 100px;
+    height: 100px;
+}
+
+.gym-icon {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-text {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.p-gym {
+    font-size: 13px;
+    color: white;
+}
+
+/* Global Font Styles */
+p, a, h1, h2, h3, h5, h6 {
+    font-size: 10px;
+    color: white; 
+}
+
+h1, h2, h3, h5, h6 {
+    font-size: 15px; 
+}
+
+/* Trial training Box */
+.probetraining-box {
+    height: 200px;
+    background-color: #fe0000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 100px;
+    flex-wrap: wrap; 
+}
+
+.probetraining-p {
+    font-size: 25px;
+}
+
+.left-section, .middle-section, .right-section {
+    background-color: #fe0000;
+    color: white;
+    flex: 1; 
+    max-width: 400px; 
+    margin-left: 15px; 
+    padding: 0 15px; 
+}
+
+.middle-section {
+    width: 250px; 
+}
+
+.right-section {
+    justify-content: center; 
+}
+
+.button-probetraining {
+    background-color: black;
+    width: 100%; 
+    max-width: 200px; 
+    padding: 15px 40px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: opacity 0.15s;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+/* Footer Styles */
+.footer-link {
+    text-decoration: none;
+    color: lightgray;
+}
+
+.footer-link:hover {
+    color: white;
+}
+
+/* Specific Page Styles */
+.test {
+    background-color: black;
+    margin-top: 20px;
+}
+
+.p-UnserePreise {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-size: 35px;
+    font-weight: bold;
+    
+}
+
+.preise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+.price-box ul li {
+    list-style: none;
+    padding: 0;
+    color: white;
+    
+}
+
+.price-box ul .with-check::before {
+    content: "\2713"; /* Unicode-Code für ein Häkchen */
+    margin-right: 10px;
+    color: green;
+    
+}
+
+.price-box ul .with-cross::before {
+    content: "\2717"; /* Unicode-Code für ein Kreuz */
+    color: red;
+}
+
+.col-md-3 {
+    margin-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+    opacity: 0.4;
+    max-width: 300px; 
+    border: 1px solid #ddd
+}
+
+.col-md-3:hover {
+    opacity: 0.7; 
+    background-color: black;
+}
+
+.price-large {
+    font-size: 24px; 
+}
+
+.price-small {
+    font-size: 12px; 
+}
+
+/* Body Styles */
+body {
+    background-color: lightslategray;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .left-section, .middle-section, .right-section {
+        width: 100%; 
+        max-width: none; 
+        margin-left: 0; 
+    }
+}
+
+/* Equipment Section Styles */
+.Equipment_container {
+    padding: 2rem 0;
+}
+
+.card {
+    background-color: rgb(85, 96, 108); /* Darker slate gray background */
+    color: #fff; /* White text for contrast */
+    border: 1px solid #ddd; /* Light gray border for definition */
+    margin-bottom: 20px; /* Space between cards */
+    padding: 15px; /* Padding inside the card */
+    border-radius: 5px; /* Rounded corners for the card */
+}
+
+.card.mb-4.shadow-sm {
+    box-shadow: none; /* Remove shadow if not needed */
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #fff; /* Ensure the title is visible against the dark background */
+
+}
+
+.card-text {
+    color: #fff; /* Ensure the text is visible against the dark background */
+}
+
+.btn-link {
+    color: #add8e6; /* Light blue color for contrast and visibility */
+    text-decoration: underline;
+}
+
+.btn-link:hover {
+    color: #fff; /* White color on hover for better visibility */
+}
+
+.card-img-top {
+    display: none; /* Hide image */
+
+}
+
+/* Description Button */
+.toggle-description {
+    background: none;
+    border: none;
+    color: #ffffff;
+    padding: 0;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Description Toggle */
+.description .toggle-description {
+    display: block; /* Make the button a block to take up the full width */
+    margin-top: 0.5rem;
+    font-size: 0.9em;
+    color: #007bff;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    text-decoration: underline; /* Indicates that it is clickable */
+}
+
+/* Responsive card layout */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+
+    .jumbotron {
+        padding: 3rem 1rem;
+    }
+}
+
+/* Style for the About Us Element */
+.about-us-element {
+    background-color: rgb(85, 96, 108);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.about-us-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about-us-text {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+
+.modal-content {
+    background-color: #333; /* Dark background for contrast */
+    color: white; /* White text for readability */
+}
