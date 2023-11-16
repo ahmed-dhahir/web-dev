@@ -16,7 +16,7 @@
     </head>
     
 
-    <header>
+    <!-- <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand mr-3 text-white" href="#">PowerPulse Fitness</a>
@@ -39,10 +39,12 @@
                 </ul>
             </div>
         </nav>
-    </header>
+    </header> -->
     
 
     <body>
+        <?php include 'https://ahmed-dhahir.github.io/web-dev/assets/php/navbar.php'; ?>
+
         <img src="https://ahmed-dhahir.github.io/web-dev/assets/images/thumbnail/Fitnessstudio.jpg" width="100%">
 
         <div class="p-offers">
